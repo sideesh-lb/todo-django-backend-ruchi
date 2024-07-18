@@ -25,7 +25,12 @@ SECRET_KEY = "django-insecure-)nn&7=(bi)yy%9o3))f!ok@izu2#!#u0!!$k2(h__^uk003k5j
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'ec2-3-142-242-230.us-east-2.compute.amazonaws.com',
+    'localhost',
+    '127.0.0.1',
+]
+
 
 
 # Application definition
@@ -75,6 +80,8 @@ WSGI_APPLICATION = "BackendDjango.wsgi.application"
 
 CORS_ALLOWED_ORIGINS = [
     'http://ruchithra-todo-react-app.s3-website.us-east-2.amazonaws.com',
+    'http://localhost:3000',
+    'http://ec2-3-142-242-230.us-east-2.compute.amazonaws.com'
 ]
 
 # CORS settings
