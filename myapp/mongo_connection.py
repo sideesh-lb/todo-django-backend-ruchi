@@ -2,8 +2,7 @@
 
 from pymongo import MongoClient
 
-client = MongoClient('localhost', 27017)
+client = MongoClient('mongodb+srv://sideesh:pavitasree@cluster-kanbas.x2jtkqg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster-Kanbas')
 db = client['tododb']
 
-# Example collection
 todo_collection = db['todonews']
